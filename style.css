@@ -1,0 +1,51 @@
+/* Set styling (columns, rows, font color, family etc.) */
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #04040f;
+    background-color: #50154b;}
+p {
+    color: #50154b;}
+th{
+    color: #50154b}
+td{
+    color: #50154b}
+
+.header {
+    text-align: left;
+    padding: 16px;}
+
+.row {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;}
+
+.column {
+    -ms-flex: 50%; 
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: left;}
+
+
+@media (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;}}
+
+
+@media (max-width: 600px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;}}

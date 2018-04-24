@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>UNIT_12_WebDevelopment</title>
+    
+        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel = "stylesheet" href = "style.css">
+
+        <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </head>
+
+<!-- Navigation Bar -->
+<nav class = "navbar navbar-default">
+    <div class = "container-fluid">
+    <div class = "navbar-header">
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+        <li class = "active"><a href = "https://dhoebbel.github.io"><span class = "glyphicon glyphicon-home"></span></a></li>
+        <li class = "dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="">Plots
+            <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://dhoebbel.github.io/Unit12_WebDevelopment/temperature.html#">Temperature</a></li>
+                    <li><a href="https://dhoebbel.github.io/Unit12_WebDevelopment/humidity.html#">Humidity</a></li>
+                    <li><a href="https://dhoebbel.github.io/Unit12_WebDevelopment/cloudiness.html#">Clouds</a></li>
+                    <li><a href="https://dhoebbel.github.io/Unit12_WebDevelopment/wind.html#">Wind</a></li>
+                </ul>
+        </li>
+        <li><a href="https://dhoebbel.github.io/Unit12_WebDevelopment/DataComparision.html">Data Comparison</a></li>
+        <li><a href="https://dhoebbel.github.io/Unit12_WebDevelopment/RawData.html">Raw Data</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--Page Title  -->
+    <div class = "jumbotron text-center">
+        <h1>Climate Variables by Latitude</h1>
+        <p>Data is from OpenWeather API with data engineering and visualizations completed in pandas</p> 
+    </div>
+
+ <!-- Row One -->
+ <div class = "container-fluid">
+    <div class = "row">
+
+<!-- Left Panel  -->
+        <div class = "col-sm-7">    
+                    <div class = "panel panel-default">
+                        <div class = "panel-body">
+                            <h3>Summary: Latitude & Climate</h3>
+                            <hr>
+                            <img class = "col-xs-9" src = "images/temperature.png" alt = "temperature">
+                            <p>This project used the OpenWeather API and cities module. Random latitudes and longitudes were
+                                generated and the cities module was applied to match the nearest city. Data on temperature
+                                cloud cover, humidity, and wind speed were pulled from OpenWeather. Analysis and graphing were 
+                                handled in pandas and matplotlib.
+                                
+                                There is a strong correlation between latitude and temperature, however the 
+                                relationship between cloud cover, humidity, and wind speed to latitude are not definitive.
+                            </p>
+                       </div>
+                    </div>
+        </div>   
+<!-- Right Panel -->
+<div class = "col-sm-5">
+                                    
+    <div class = "panel panel-default">
+        <div class = "panel-body">
+            <h4>Visuals</h4>
+            <hr>
+                    <div class = "col-xs-6">
+                       <a href="https://dhoebbel.github.io/webdevelopment-challenge/temperature_latitude_plot.html#"><img class="img-fluid" src="images/temperature.png" style="width:100%"></a>
+                       <a href="https://dhoebbel.github.io/webdevelopment-challenge/cloudiness_latitdue_plot.html#"><img src="images/cloudiness.png" style="width:100%"></a>
+                       </div>
+                       <div class="col-xs-6">
+                       <a href="https://dhoebbel.github.io/webdevelopment-challenge/humidity_latitude_plot.html#"><img src="images/humidity.png" style="width:100%"></a>
+                       <a href="https://dhoebbel.github.io/webdevelopment-challenge/wind_latitude_plot.html#"><img src="images/wind.png" style="width:100%"></a>
+                    </
+                   
+                </div> 
+    </div>
+</div>
+</div>
+</div>
+<footer class = "footer">
+<div class = "container">
+<a href = "https://github.com/dhoebbel"><span class = "text-muted">github.com/dhoebbel</span></a>
+</div>
+</footer>
+</body>
+</html>
